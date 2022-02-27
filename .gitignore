@@ -1,0 +1,8 @@
+__pycache__/
+*.sqlite3
+*.crt
+tests.py
+thumbs.db
+*.pyc
+.DS_Store
+media/

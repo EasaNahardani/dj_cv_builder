@@ -1,0 +1,51 @@
+<!--
+=========================================================
+* Eisa Nahardani -- Web Developer -- 92developer92@gmail.com
+======================================================
+-->
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Primary Meta Tags -->
+
+<title>
+  {% block title %}{% endblock %}
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="">
+<meta name="author" content="Eisa Nahardani">
+
+
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/core/bootstrap.min.css' %}">
+
+<!-- FA Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- MY CSS -->
+<link rel="stylesheet" href="{% static '/css/base.css' %}">
+
+{% block css %}
+{% endblock css %}
+</head>
+
+<body>
+
+    {% block content %}
+    {% endblock content %}
+
+
+    {% include './scripts.html' %}
+
+    {% block js %}
+    {% endblock js %}
+</body>
+
+</html>

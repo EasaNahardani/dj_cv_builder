@@ -1,0 +1,10 @@
+@font-face{
+  font-family:"font-awesome regular";
+  src:url("./font-awsome/.eot");
+  src:url("./IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+  url(./IRANSansWeb.woff) format("woff"),
+  url(./IRANSansWeb.ttf) format("truetype"),
+  url(./IRANSansWeb.svg) format("svg");
+  font-weight:400;
+  font-style:normal;
+}

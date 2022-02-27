@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/builder/cv.css' %}">
+{% endblock css %}
+
+{% block content %}
+  {% include 'builder/cv-sample.html' %}
+  <a href="{% url 'builder:download' %}" >Download CV</a>
+{% endblock %}
